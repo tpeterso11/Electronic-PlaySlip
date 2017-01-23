@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="tran_green">#009688</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gold">#FFD700</color>
+    <color name="app_green">#256D1B</color>
+    <color name="alt_green">#0FFF5E</color>
+    <color name="app_blue">#0060ef</color>
+    <color name="app_blue_pressed">#00398f</color>
+    <color name="sub_blue">#CC22274e</color>
+    <color name="white_pressed">#CCCCCC</color>
+
+    <!--Base Colors -->
+    <color name="app_purple">#5b3675</color>
+    <color name="tomato">#fc5266</color>
+    <color name="new_blue">#132847</color>
+    <color name="light_blue">#60a8ee</color>
+    <color name="new_green">#30b77e</color>
+    <color name="new_black">#08111f</color>
+    <color name="new_purple">#3232CC</color>
+
+    <!--Ho-Chunk -->
+    <color name="hochunk_red">#6c0000</color>
+    <color name="hochunk_grey">#404041</color>
+</resources>

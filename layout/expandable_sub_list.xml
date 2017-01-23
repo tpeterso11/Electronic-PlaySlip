@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/sub_main"
+    android:minHeight="40dp"
+    android:weightSum="2"
+    android:layout_height="40dp"
+    android:background="#101c2e">
+    <TextView
+        android:id="@+id/lblListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dip"
+        android:textColor="#e6e6e6"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="3dp"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:id="@+id/check"
+        android:src="@drawable/checkmark_outline_ico"/>
+</RelativeLayout>

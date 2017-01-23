@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="Theme.Custom" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- enable overlapping of exiting and entering activities-->
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+
+    </style>
+
+
+    <style name="Theme.Custom.Dark" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/WhiteDrawerIconStyle</item>
+        <item name="android:windowBackground">@color/new_blue</item>
+        <item name="android:colorBackground">@color/new_blue</item>
+        <!--<item name="android:windowSharedElementsUseOverlay">false</item>-->
+
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- enable overlapping of exiting and entering activities-->
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+
+</style>
+
+    <!--<style name="CustomActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>-->
+        <!-- Support library compatibility -->
+        <!--<item name="windowActionBarOverlay">true</item>
+    </style>-->
+
+    <style name="BlackDrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/black</item>
+    </style>
+        <!--<item name="android:actionBarStyle">@style/MyActionBarTheme</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:editTextStyle">@style/App_EditTextStyle</item>
+        <item name="android:textColorHint">@color/black</item>
+	</style>
+	<style name="SecondTheme" parent="Theme.AppCompat.Light.NoActionBar">
+	    <item name="android:actionBarStyle">@style/MyActionBarTheme</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:editTextStyle">@style/App_EditTextStyle</item>
+        <item name="android:textColorHint">@color/black</item>
+	</style>
+		<style name="MyActionBarTheme" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+	<style name="Theme.TranslucentActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+	</style>
+
+	<style name="Theme.TranslucentActionBar.ActionBar" />
+
+    <style name="NewTheme" parent="android:Theme.Material.Light">
+            <!- enable window content transitions -->
+            <!--<item name="android:windowContentTransitions">true</item>
+
+            <!- enable overlapping of exiting and entering activities-->
+            <!--<item name="android:windowAllowEnterTransitionOverlap">true</item>
+            <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
+
+    <style name="Theme.Custom" parent="android:Theme.Material.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="CustomActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!- Support library compatibility -->
+        <!--<item name="windowActionBarOverlay">true</item>
+    </style>
+    <!-
+    <style name="ProgressDialogTheme" parent="android:style/Theme.Dialog">
+    	<item name="android:textColor">#fff</item>
+    </style>
+    -->
+</resources>

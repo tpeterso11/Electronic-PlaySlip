@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_blue">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loading"
+        android:background="#CC000000"
+        android:visibility="gone"
+        android:elevation="60dp">
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/playport_icon"
+            android:id="@+id/loading_logo"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="Loading Your Ticket..."
+            android:textSize="18sp"
+            android:layout_below="@id/loading_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/welcome_text"
+            android:visibility="visible"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="User"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/welcome_text"
+            android:layout_marginTop="10dp"
+            android:id="@+id/user_text"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/template_holder"/>
+</RelativeLayout>

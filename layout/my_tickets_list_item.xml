@@ -1,0 +1,41 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/landing_category"
+    android:visibility="visible"
+    android:elevation="20dp"
+    android:background="#FFF"
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/find_logo_v1"
+            android:scaleType="fitXY"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/banner"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="test title"
+            android:background="#CC256D1B"
+            android:visibility="gone"
+            android:textColor="#FFF"
+            android:singleLine="true"
+            style="@style/Base.TextAppearance.AppCompat.Headline" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:text="test sub"
+            android:layout_weight="1"
+            style="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+    </LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dev_mode">true</string>
+    <string name="demo_mode">false</string>
+    <string name="prod_mode">false</string>
+    <string name="tribal_mode">false</string>
+    <string name="codere">false</string>
+    <string name="kiosk">false</string>
+
+
+    <string name="dev_protocol">http://</string>
+    <string name="dev_url">test-api-eps.azurewebsites.net</string>
+    <string name="dev_secure_url">test-api-eps.azurewebsites.net</string>
+    <string name="dev_test_api">http://dev-eps.royalfortunes.com/pingtest.php</string>
+    <string name="dev_test_shoutz">test-eps.shoutz.com</string>
+    <string name="google_place_search">https://maps.googleapis.com/maps/</string>
+
+    <string name="prod_protocol">http://</string>
+    <string name="prod_url">api.shoutz.com</string>
+    <string name="prod_secure_url">secure.shoutz.com</string>
+
+    <string name="demo_protocol">http://</string>
+    <string name="demo_url">demo-api-eps.azurewebsites.net</string>
+    <string name="demo_view">demo-eps.shoutz.com</string>
+
+    <string name="tribal_url">dev-tribaleps-api.azurewebsites.net</string>
+    <string name="tribal_view">dev-tribal.shoutz.com/getticketforview.php</string>
+
+    <string name="login_service">/api/v1/user/login</string>
+    <string name="registration_service">/api/v1/user/register</string>
+    <string name="post_ticket_service">/api/v1/tickets/submit</string>
+    <string name="redeem_ticket_service">/api/v1/tickets/redeem</string>
+    <string name="get_tickets_list">/api/v1/tickets/getlist?ticketids=</string>
+    <string name="get_tickets_user">/api/v1/tickets/getuser?authtoken=</string>
+    <string name="get_tickets_user2">/api/v1/tickets/getuser</string>
+    <string name="create_batch">/api/v1/tickets/createbatch</string>
+    <string name="purchase_batch">/api/v1/tickets/purchase</string>
+    <string name="game_service">/api/v1/games</string>
+    <string name="edit_user">/api/v1/user/edit</string>
+    <string name="held_tickets">/api/v1/user/heldtix?authtoken=</string>
+    <string name="getticketview">/getticketforview.php?ticketid=</string>
+    <string name="markviewed">/api/v1/tickets/markview</string>
+    <string name="delete_ticket">/api/v1/tickets/delete</string>
+</resources>

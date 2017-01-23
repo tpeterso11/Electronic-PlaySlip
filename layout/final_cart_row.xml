@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="80dp"
+        android:id="@+id/swipe">
+        <!-- Bottom View Start-->
+        <LinearLayout
+            android:background="#FFF"
+            android:id="@+id/bottom_wrapper"
+            android:orientation="horizontal"
+            android:layout_width="160dp"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/back"
+                android:background="@color/gold">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/put_back"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/tomato"
+                android:id="@+id/trash"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/trash_icon"/>
+            </RelativeLayout>
+            <!--What you want to show-->
+        </LinearLayout>
+        <!-- Bottom View End-->
+
+        <!-- Surface View Start -->
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="#132847"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:weightSum="4">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/tile_find_9"
+                        android:id="@+id/icon"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_purple"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:id="@+id/count"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="2X"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/position"
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:text="$5 Find Nine Ticket"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prize"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:text="Top Prize: $10,000"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Swipe"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="-5dp"
+                        android:textColor="#FFF"
+                        android:rotation="-90"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="-10dp"
+                        android:src="@drawable/more_white"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e930b77e"
+                android:id="@+id/deleted"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ticket Deleted"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/delete_text"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e9FFD700"
+                android:id="@+id/back_to_list"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Back On List"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/back_text"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <!--What you want to show in SurfaceView-->
+        </RelativeLayout>
+        <!-- Surface View End -->
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

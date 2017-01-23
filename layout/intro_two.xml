@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/playport_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginBottom="-20dp"
+        android:alpha=".1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Find and Interact!"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:layout_below="@id/header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/two_tag"
+        android:gravity="center"
+        android:text="Find and pre-order your favorite games! Pick your numbers, and have them ready for pickup!"/>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:id="@+id/asset3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/two_tag"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginRight="-50dp"
+        android:visibility="visible"
+        android:src="@drawable/intro_asset3"/>
+</RelativeLayout>

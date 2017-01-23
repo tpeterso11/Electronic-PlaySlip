@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="WhiteDrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">#000</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">#000</item> <!-- activated color change as you wish -->
+        <item name="android:textColor">#FFFF3F3C</item> <!-- checkbox text color -->
+    </style>
+
+    <style name="YourAlertDialogTheme" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@color/new_blue</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle_Holo</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+
+    <style name="DialogWindowTitle_Holo">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo.DialogWindowTitle</item>
+    </style>
+
+
+    <style name="DialogWindowTitle.White" parent="@style/DialogWindowTitle_Holo">
+        <item name="android:textAppearance">@style/TextAppearance.Sphinx.DialogWindowTitle</item>
+    </style>
+
+    <style name="TextAppearance.Sphinx.DialogWindowTitle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DialogWindowTitle.Sphinx" parent="@style/DialogWindowTitle_Holo">
+        <item name="android:textAppearance">@style/TextAppearance.Sphinx.DialogWindowTitle</item>
+    </style>
+
+</resources>

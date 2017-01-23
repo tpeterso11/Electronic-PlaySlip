@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#256D1B"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list"
+            android:id="@+id/cart_image"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-50dp"
+            android:transitionName="reveal"
+            android:visibility="invisible"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_tickets"
+        android:textColor="#FFF"
+        android:id="@+id/edit_head"
+        android:layout_marginTop="40dp"
+        android:textSize="26sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game #"
+            android:id="@+id/gameName"
+            android:textColor="#FFF"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/edit_head"
+            android:layout_toEndOf="@id/edit_head"
+            android:textSize="26sp"/>
+    </RelativeLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="20dp"
+            android:id="@+id/edit_ticket_list"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="20.0sp"
+            android:elevation="20dp"/>
+</LinearLayout>
